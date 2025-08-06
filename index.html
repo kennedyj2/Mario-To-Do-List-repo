@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do-List App</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Bubblegum+Sans&family=Chewy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <audio autoplay id="audioPlayer"></audio>
+        <div class="wrapper">
+            <header>
+                <div class="Nintendo">
+                    <img src="Images/Nintendo.svg.png" alt="Nintendo.png" class="Nintendo-Icon">
+                </div>
+                <div class="date">
+                    <h2 >Plans for the Day</h2>
+                </div>
+                <div class="title">
+                    <h1 id="Current_Day">
+                        Today's Date
+                    </h1>
+                </div>
+            </header>
+            <section class="Middle-Section">
+                <div class="Selected-Character-Image" id="Char-Widen">
+                    <audio id="hoverSound" src="Audio/Hover-Widen.wav"></audio>
+                    <img src="Images/mario_character_select_icons_by_greenmachine987_db0wsn2-pre (1).png" alt="character.png" class="Character-Icon" id="character-Icon">
+                </div>
+            </section>
+            <section class="Task-Section">
+                <audio id="Task_Add_Sound" src="Audio/Button-Click.wav"></audio>
+                <audio id="Task_Completed_Sound" src="Audio/TaskComplete.wav"></audio>
+                <ul>
+                    <li>
+                        <input type="text" class="Tasks_1" placeholder="Enter a Task" id="To-Do">
+                        <button id="Task_Add1" class="Plus" onclick="changePlus('Images/completed.png')"><img src="Images/icons8-plus-button-128.png" alt="PlusSymbol" class="Plus-Sign" id="PlusImage1"></button>
+                    </li>
+                    <li>
+                        <input type="text" class="Tasks_1" placeholder="Enter a Task" id="To-Do2">
+                        <button id="Task_Add2" class="Plus" onclick="changePlus2('Images/completed.png')"><img src="Images/icons8-plus-button-128.png" alt="PlusSymbol" class="Plus-Sign" id="PlusImage2"></button>
+                    </li>
+                    <li>
+                        <input type="text" class="Tasks_1" placeholder="Enter a Task" id="To-Do3">
+                        <button id="Task_Add3" class="Plus" onclick="changePlus3('Images/completed.png')"><img src="Images/icons8-plus-button-128.png" alt="PlusSymbol" class="Plus-Sign" id="PlusImage3"></button>
+                    </li>
+                    <li>
+                        <input type="text" class="Tasks_1" placeholder="Enter a Task" id="To-Do4">
+                        <button id="Task_Add4" class="Plus" onclick="changePlus4('Images/completed.png')"><img src="Images/icons8-plus-button-128.png" alt="PlusSymbol" class="Plus-Sign" id="PlusImage4"></button>
+                    </li>
+                    <li>
+                        <input type="text" class="Tasks_1" placeholder="Enter a Task" id="To-Do5">
+                        <button id="Task_Add5" class="Plus" onclick="changePlus5('Images/completed.png')"><img src="Images/icons8-plus-button-128.png" alt="PlusSymbol" class="Plus-Sign" id="PlusImage5"></button>
+                    </li>
+                    
+                </ul>
+            </section>
+        </div>
+        <div class="character-selection" id="characterSelection">
+            <audio src="Audio/oh-yeah-mario-time-101soundboards.mp3" class="M" id="MarioSound"></audio>
+            <audio src="Audio/Lets-A-Go.wav" class="L" id="LuigiSound"></audio>
+            <audio src="Audio/hello!-made-with-Voicemod.mp3" class="P" id="PeachSound"></audio>
+            <audio src="Audio/Blue_Toad.wav" class="T" id="ToadSound"></audio>
+            <audio src="Audio/HiRosalina.wav" class="R" id="RosalinaSound"></audio>
+            <audio id="myAudio" src="Audio/Select-Sound.wav"></audio>
+            <button id="B" class="M-Button" onclick="changeImage('Images/mario_character_select_icons_by_greenmachine987_db0wsn2-pre (1).png')">
+                <img src="Images/mario_character_select_icons_by_greenmachine987_db0wsn2-pre (1).png" alt="Icon-1.png" class="Mario-Icon", id="Mario">
+            </button>
+            <button id="L" class="L-Button" onclick="changeImage('Images/luigi_character_select_icons_by_greenmachine987_db1031e-pre (1).png')">
+                <img src="Images/luigi_character_select_icons_by_greenmachine987_db1031e-pre (1).png" alt="Icon-2.png" class="Luigi-Icon", id="Luigi">
+            </button>
+            <button id="T" class="T-Button" onclick="changeImage('Images/toad_character_select_icons_by_greenmachine987_db1sey3-pre (1).png')">
+                <img src="Images/toad_character_select_icons_by_greenmachine987_db1sey3-pre (1).png" alt="Icon-3.png" class="Toad-Icon", id="Toad">
+            </button>
+            <button id="P" class="P-Button" onclick="changeImage('Images/peach_character_select_icons_by_greenmachine987_db1sevy-pre (1).png')">    
+                <img src="Images/peach_character_select_icons_by_greenmachine987_db1sevy-pre (1).png" alt="Icon-4.png" class="Peach-Icon", id="Peach">
+            </button>
+            <button id="R" class="R-Button" onclick="changeImage('Images/rosalina_character_select_icons_by_greenmachine987_db24sc7-pre (1).png')">
+                <img src="Images/rosalina_character_select_icons_by_greenmachine987_db24sc7-pre (1).png" alt="Icon-5.png" class="Rosalina-Icon", id="Rosalina">
+            </button>
+            
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

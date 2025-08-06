@@ -1,0 +1,323 @@
+body{
+    margin:0;
+    padding: 0;
+    background-image: url(Images/HD\ wallpaper_\ Nintendo\,\ Super\ Mario\,\ video\ games\,\ pattern\,\ red\,\ white\,\ communication.png);
+    background-repeat: no-repeat; /* prevents tiling */
+    background-size: cover;       /* makes it cover the whole screen */
+    background-position: center;  /* centers the image */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrollbar issues */
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-family: Bitcount;
+    background-color: #e7000a;
+    margin: 0;                 /* Remove default spacing */
+    padding: 10px 20px;
+    width: 100%;               /* Use % instead of vw to avoid scrollbar overflow */
+    box-sizing: border-box;    /* Ensures padding doesn’t break width */
+}
+
+.Nintendo{
+    height: 100%;
+    width: 10%;
+}
+
+.Nintendo-Icon{
+    height: 100%;
+    width: 100%;
+}
+
+.Middle-Section{
+    display: flex;
+    justify-content: center;
+}
+
+.Selected-Character-Image{
+    background-color: transparent;
+    border: 5px solid red;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    transition: width 0.3s, background-color 0.5s;
+}
+
+.Selected-Character-Image:hover{
+    background-color: red;
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.Tasks_1{
+    box-shadow: 5px 5px 0px 0px red;
+    border-color: red;
+    border-radius: 5px;
+    font-family: Bitcount;
+    color: black;
+}
+
+.Character-Icon{
+    border-radius: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.Task-Section{
+    display: flex;
+    justify-content: center;
+    font-family: Bitcount;
+    font-size: 20px;
+}
+
+.Task-Section ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+/*.Task-Section ul li::before{
+    content: ""; 
+    display: inline-block; 
+    background-image: url(Images/Eo_circle_green_checkmark.svg-removebg-preview.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    vertical-align: middle; 
+    opacity: 0; 
+}*/
+
+.Plus-Sign{
+    display: inline-block; 
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    vertical-align: middle; 
+    padding-left: 6px;
+    border-radius: 10px;
+}
+
+.Plus{
+    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 3px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Plus:active{
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+
+
+
+/*.Task-Section ul li::after{
+    content: ""; 
+    display: inline-block; 
+    background-image: url(Images/icons8-plus-button-128.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: 16px; 
+    vertical-align: middle;
+   
+} */
+
+.character-selection{
+    display: flex;
+    justify-content: space-between;
+    height: 33vh;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 26px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.character-selection button{
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 5px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+
+}
+
+.M-Button{
+    background-color: red;
+    border-color: red;
+    transition: 0.3s;
+    
+}
+
+.M-Button:hover{
+      background: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  color: #000;
+}
+
+
+.L-Button{
+    border-color: green;
+    background-color: green;
+    transition: 0.3s;
+}
+
+.L-Button:hover{
+      background: #fff;
+  box-shadow: 0px 2px 10px 5px white;
+  color: #000;
+}
+.T-Button{
+    border-color: royalblue;
+    background-color: royalblue;
+    transition: 0.3s;
+}
+
+.T-Button:hover{
+      background: #fff;
+  box-shadow: 0px 2px 10px 5px white;
+  color: #000;
+}
+
+.P-Button:hover{
+      background: #fff;
+  box-shadow: 0px 2px 10px 5px white;
+  color: #000;
+}
+.P-Button{
+    border-color: rgb(255, 171, 185);
+    transition: 0.3s;
+    background-color: rgb(255, 171, 185);
+}
+
+.R-Button:hover{
+      background: #fff;
+  box-shadow: 0px 2px 10px 5px white;
+  color: #000;
+}
+.R-Button{
+    border-color: cyan;
+    background-color: cyan;
+    transition: 0.3s;
+}
+
+.M-Button:active{
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+.L-Button:active{
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+.T-Button:active{
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+.P-Button:active{
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+.R-Button:active{
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+
+
+.character-selection:has(.Mario-Icon:hover){
+    background-color: red;
+}
+
+
+.character-selection:has(.Luigi-Icon:hover){
+    background-color: green;
+}
+
+.character-selection:has(.Toad-Icon:hover){
+    background-color: royalblue;
+}
+
+.character-selection:has(.Peach-Icon:hover){
+    background-color: rgb(255, 171, 185);
+}
+
+.character-selection:has(.Rosalina-Icon:hover){
+    background-color: cyan
+}
+
+.Mario-Icon{
+    border-radius: 50px;
+    height: 30vh;
+}
+
+
+.Luigi-Icon{
+    border-radius: 50px;
+    height: 30vh;
+}
+
+.Toad-Icon{
+    border-radius: 50px;
+    height: 30vh;
+}
+
+.Peach-Icon{
+    border-radius: 50px;
+    height: 30vh;
+}
+
+.Rosalina-Icon{
+    border-radius: 50px;
+    height: 30vh;
+}
+
+@media screen and (max-width: 600px) {
+    .character-selection {
+        display: flex;
+        flex-wrap: nowrap;         /* Keep buttons in one row */
+        overflow-x: auto;          /* Enable horizontal scroll */
+        gap: 10px;
+        padding: 10px;
+        scroll-snap-type: x mandatory; /* Optional: snap to each button */
+    }
+
+    .character-selection button {
+        flex: 0 0 auto;            /* Prevent shrinking */
+        width: 120px;              /* Set consistent width */
+        height: auto;
+        border-radius: 20px;
+        scroll-snap-align: center; /* Snap each character to center */
+    }
+
+    .character-selection img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+       
+    }
+}
